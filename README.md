@@ -1,15 +1,19 @@
 <h1 align="center">pySelection for time series feature selection</h1> 
 
 <p align="center"> 
-<a href="https://github.com/lprtk/pySelection/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/lprtk/ pyRisk"></a> 
-<a href="https://github.com/lprtk/pySelection/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/lprtk/pyRisk"></a> 
-<a href="https://github.com/lprtk/pySelection/stargazers"><img alt="Github Stars" src="https://img.shields.io/github/stars/lprtk/pyRisk "></a> 
-<a href="https://github.com/lprtk/pySelection/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/lprtk/pyRisk"></a> 
+<a href="https://github.com/lprtk/pySelection/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/lprtk/pySelection"></a> 
+<a href="https://github.com/lprtk/pySelection/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/lprtk/pySelection"></a> 
+<a href="https://github.com/lprtk/pySelection/stargazers"><img alt="Github Stars" src="https://img.shields.io/github/stars/lprtk/pySelection "></a> 
+<a href="https://github.com/lprtk/pySelection/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/lprtk/pySelection"></a> 
 <a href="https://github.com/lprtk/pySelection/"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a> 
 </p> 
 
 ## Table of contents 
-* [Overview :loudspeaker:](#Overview) * [Content :mag_right:](#Context) * [Requirements :page_with_curl:](#Requirements) * [File details :open_file_folder:](#File-details) * [Features :computer:](#Features) 
+* [Overview :loudspeaker:](#Overview)
+* [Content :mag_right:](#Context)
+* [Requirements :page_with_curl:](#Requirements)
+* [File details :open_file_folder:](#File-details)
+* [Features :computer:](#Features) 
 
 <a id='section01'></a> 
 ## Overview 
@@ -25,25 +29,25 @@ For the moment, two functions are available: <ul>
 </ul> 
 
 <a id='section03'></a> 
-## Requirements 
+## Requirements
 * **Python version 3.9.7** 
 * **Install requirements.txt** 
-```console 
+```console
 $ pip install -r requirements.txt 
 ``` 
 
-* **Librairies used** 
-```python 
-import matplotlib.pyplot as plt 
-import numpy as np 
-import pandas as pd 
-from random import choice, randint 
+* **Librairies used**
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from random import choice, randint
 from sklearn.linear_model import LinearRegression 
 from sklearn.utils.validation import check_is_fitted 
 ``` 
 
 <a id='section04'></a> 
-## File details 
+## File details
 * **requirements** 
 * This folder contains a .txt file with all the packages and versions needed to run the project. 
 * **pySelection** 
@@ -54,16 +58,18 @@ from sklearn.utils.validation import check_is_fitted
 </br> 
 
 Here is the project pattern: 
-``` 
+```
 - project 
-> pySelection > requirements 
-- requirements.txt > codefile 
-- pySelection.py > example 
-- example.ipynb 
+    > pySelection
+        > requirements 
+            - requirements.txt
+        > codefile 
+            - pySelection.py
+        > example 
+            - example.ipynb 
 ```
 
 <a id='section05'></a> 
 ## Features 
-<p align="center"> <a href="https://github.com/lprtk/lprtk ">My profil</a> • 
+<p align="center"><a href="https://github.com/lprtk/lprtk ">My profil</a> • 
 <a href="https://github.com/lprtk/lprtk ">My GitHub</a> </p> 
-
