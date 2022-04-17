@@ -130,6 +130,22 @@ class Metrics:
         return mae
     
     
+    def mape(self) -> float:
+        """
+        Function to compute the Mean Absolute Percentage Error (MAPE) regression loss.
+
+        Returns
+        -------
+        float
+            A non-negative floating point value (the best value is 0.0) which corresponds
+            to the loss value of the MAPE.
+
+        """
+        mape = ((100/self.y_pred.shape[0]) * np.sum(np.abs((self.y_true-self.y_pred)/self.y_true)))
+        
+        return float(mape)
+    
+    
     def um_theil(self) -> float: 
         """
         Function to compute the Theil UM (bias) metric. Bias (UM) is an indication of
