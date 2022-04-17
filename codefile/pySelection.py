@@ -364,7 +364,7 @@ class FeatureSelection:
                     )
             
             if isinstance(y_train, pd.core.series.Series) or isinstance(y_train, np.ndarray)\
-            or isinstance(X_train, pd.core.frame.DataFrame):
+            or isinstance(y_train, pd.core.frame.DataFrame):
                 self.y_train = y_train
             else:
                 raise TypeError(
@@ -372,7 +372,7 @@ class FeatureSelection:
                     )
             
             if isinstance(y_test, pd.core.series.Series) or isinstance(y_test, np.ndarray)\
-            or isinstance(X_train, pd.core.frame.DataFrame):
+            or isinstance(y_test, pd.core.frame.DataFrame):
                 self.y_test = y_test
             else:
                 raise TypeError(
