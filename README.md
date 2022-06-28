@@ -23,7 +23,7 @@
 <a id="section02"></a> 
 ## Content 
 
-For the moment, two functions are available:
+For the moment, two class are available:
 <ul> 
 <li><p align="justify">The Metrics class implements all the Theil metrics as they are coded in the SAS software;</p></li> 
 <li><p align="justify">The FeatureSelection class is the heart of the library. The fit function will allow you to estimate several combinations of sub-models and to calculate the scores (MAE, MSE, RMSE and Theil’s metrics). Then the other functions allow you to obtain the best model and its scores, all the models estimated during the iterations or to have a plot of the estimates in and out-of-sample.</p></li> 
