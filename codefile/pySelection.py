@@ -42,10 +42,10 @@ class Metrics:
         Raises
         ------
         TypeError
-            - y_true parameter must be an ndarray or series to use the functions
+            - y_true parameter must be a ndarray or series to use the functions
             associated with the Metrics class.
             
-            - y_pred parameter must be an ndarray or series to use the functions
+            - y_pred parameter must be a ndarray or series to use the functions
             associated with the Metrics class.
             
         ValueError
@@ -63,14 +63,14 @@ class Metrics:
                 self.y_true = y_true
             else:
                 raise TypeError(
-                    f"'y_true' parameter must be an ndarray or series: got {type(y_true)}"
+                    f"'y_true' parameter must be a ndarray or series: got {type(y_true)}"
                 )
 
             if isinstance(y_pred, pd.core.series.Series) or isinstance(y_pred, np.ndarray):
                 self.y_pred = y_pred
             else:
                 raise TypeError(
-                    f"'y_pred' parameter must be an ndarray or series: got {type(y_pred)}"
+                    f"'y_pred' parameter must be a ndarray or series: got {type(y_pred)}"
                 )
                 
         
@@ -327,19 +327,19 @@ class FeatureSelection:
         Raises
         ------
         TypeError
-            - X_train parameter must be an ndarray or dataframe to use the
+            - X_train parameter must be a ndarray or dataframe to use the
             functions associated with the FeatureSelection class.
             
-            - X_test parameter must be an ndarray or dataframe to use the
+            - X_test parameter must be a ndarray or dataframe to use the
             functions associated with the FeatureSelection class.
             
-            - y_train parameter must be an ndarray or series to use the
+            - y_train parameter must be a ndarray or series to use the
             functions associated with the FeatureSelection class.
             
-            - y_test parameter must be an ndarray or series to use the
+            - y_test parameter must be a ndarray or series to use the
             functions associated with the FeatureSelection class.
             
-            - scoring parameter must be an str to use the functions associated
+            - scoring parameter must be a str to use the functions associated
             with the FeatureSelection class.
             
             - n_iter parameter must be an int to use the functions associated
@@ -369,14 +369,14 @@ class FeatureSelection:
                 self.X_train = X_train
             else:
                 raise TypeError(
-                    f"'X_train' parameter must be an ndarray or dataframe: got {type(X_train)}"
+                    f"'X_train' parameter must be a ndarray or dataframe: got {type(X_train)}"
                     )
 
             if isinstance(X_test, np.ndarray) or isinstance(X_train, pd.core.frame.DataFrame):
                 self.X_test = X_test
             else:
                 raise TypeError(
-                    f"'X_test' parameter must be an ndarray or dataframe: got {type(X_test)}"
+                    f"'X_test' parameter must be a ndarray or dataframe: got {type(X_test)}"
                     )
             
             if isinstance(y_train, pd.core.series.Series) or isinstance(y_train, np.ndarray)\
@@ -384,7 +384,7 @@ class FeatureSelection:
                 self.y_train = y_train
             else:
                 raise TypeError(
-                    f"'y_train' parameter must be an ndarray or series: got {type(y_train)}"
+                    f"'y_train' parameter must be a ndarray or series: got {type(y_train)}"
                     )
             
             if isinstance(y_test, pd.core.series.Series) or isinstance(y_test, np.ndarray)\
@@ -392,7 +392,7 @@ class FeatureSelection:
                 self.y_test = y_test
             else:
                 raise TypeError(
-                    f"'y_test' parameter must be an ndarray or series: got {type(y_test)}"
+                    f"'y_test' parameter must be a ndarray or series: got {type(y_test)}"
                     )
         
         else:
@@ -627,7 +627,7 @@ class FeatureSelection:
         ylabel : str, optional, default="Value"
             Y-axis title. Default is "Value".
             
-        label1 : str, optional, default=""True estimations"
+        label1 : str, optional, default="True estimations"
             Title for truth (correct) target values. Default is "True estimations".
             
         color1 : str, optional, default="r"
@@ -650,23 +650,23 @@ class FeatureSelection:
         TypeError
             - date parameter must be a series or None to use get_plot function.
             
-            - title parameter must be an str to use get_plot function.
+            - title parameter must be a str to use get_plot function.
             
-            - xlabel parameter must be an str to use get_plot function.
+            - xlabel parameter must be a str to use get_plot function.
             
-            - ylabel parameter must be an str to use get_plot function.
+            - ylabel parameter must be a str to use get_plot function.
             
-            - label1 parameter must be an str to use get_plot function.
+            - label1 parameter must be a str to use get_plot function.
             
-            - color1 parameter must be an str to use get_plot function.
+            - color1 parameter must be a str to use get_plot function.
             
-            - label2 parameter must be an str to use get_plot function.
+            - label2 parameter must be a str to use get_plot function.
             
-            - color2 parameter must be an str to use get_plot function.
+            - color2 parameter must be a str to use get_plot function.
             
-            - label3 parameter must be an str to use get_plot function.
+            - label3 parameter must be a str to use get_plot function.
             
-            - color3 parameter must be an str to use get_plot function.
+            - color3 parameter must be a str to use get_plot function.
 
         Returns
         -------
